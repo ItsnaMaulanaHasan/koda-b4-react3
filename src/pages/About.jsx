@@ -19,8 +19,11 @@ function About() {
 
 const AboutSection = () => {
   return (
-    <div className="bg-[#263640] p-20 text-white relative w-[70%]">
-      <div className="w-[70%]">
+    <div className="bg-[#263640] p-10 md:p-20 text-white relative w-full md:w-[70%] rounded-lg mx-auto">
+      <div className="mb-10 md:mb-0 md:absolute md:-right-60 md:top-20">
+        <img src="/public/img/img-about.png" alt="Image About" className="w-sm shadow-2xl" />
+      </div>
+      <div className="w-full md:w-[70%]">
         <div className="text-slate-400 mb-5 uppercase">Our Company's History</div>
         <div className="font-bold text-3xl mb-10">Designing Inspiring Spaces Since 1991.</div>
         <div>
@@ -32,10 +35,9 @@ const AboutSection = () => {
           <p></p>
         </div>
         <div className="h-[1px] w-full bg-gray-500 mt-20"></div>
-        <div className="mt-5 mb-5">View Our Portfolio →</div>
-      </div>
-      <div className="absolute -right-60 top-20">
-        <img src="/public/img/img-about.png" alt="Image About" className="w-sm shadow-2xl" />
+        <a href="#" className="block mt-5 mb-5 hover:underline">
+          View Our Portfolio →
+        </a>
       </div>
     </div>
   );
