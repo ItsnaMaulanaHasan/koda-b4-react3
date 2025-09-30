@@ -12,7 +12,7 @@ function Navbar() {
   const getNavLinkClass = ({ isActive }) => `hover:text-[#FF9900] transition duration-300 ${isActive ? "text-[#FF9900] font-bold" : "text-black"}`;
 
   return (
-    <nav className="bg-white flex flex-col gap-10 fixed py-10 md:px-40 px-10 w-full text-black top-0 z-2">
+    <nav className="bg-white/80 backdrop-blur-md flex flex-col gap-10 fixed py-10 md:px-40 px-10 w-full text-black top-0 z-2">
       <div className="flex justify-between items-center">
         <div>
           <Link to="/">

@@ -1,6 +1,6 @@
 function Card({ img, title, content }) {
   return (
-    <div>
+    <div className="transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
       <div>
         <img className="shadow-2xl" src={img} alt={title} />
       </div>
