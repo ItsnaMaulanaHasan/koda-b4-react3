@@ -1,16 +1,29 @@
-# React + Vite
+# Latihan Website Portofolio Arsitektur dengan React & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini adalah website multi-halaman yang sepenuhnya responsif untuk sebuah firma arsitektur fiktif bernama **ArchDesign Studio**. Proyek ini dibuat sebagai latihan untuk memperdalam pemahaman tentang React, state management sederhana, dan desain responsif menggunakan Tailwind CSS.
 
-Currently, two official plugins are available:
+## Halaman yang Dibuat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  **Home Page**: Menampilkan _hero section_ yang menarik, pengenalan singkat, dan kartu layanan yang mendetail.
+2.  **About Page**: Berisi sejarah perusahaan dengan layout teks dan gambar yang kreatif dan responsif.
+3.  **Contact Page**: Menyediakan formulir kontak yang fungsional di mana data yang dikirim akan disimpan di `localStorage` dan ditampilkan langsung di bawahnya.
 
-## React Compiler
+## Fitur Utama
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Desain Responsif**: Semua halaman dioptimalkan untuk tampilan yang baik di berbagai perangkat, mulai dari mobile, tablet, hingga desktop.
+- **Struktur Berbasis Komponen**: Proyek ini dipecah menjadi komponen-komponen yang dapat digunakan kembali seperti `Navbar`, `Footer`, `Card`, dan `Input` untuk menjaga kode tetap bersih dan terorganisir.
+- **Styling Modern dengan Tailwind CSS**: Seluruh styling dilakukan menggunakan utility classes dari Tailwind CSS untuk pengembangan yang cepat dan konsisten.
+- **Formulir Interaktif**: Halaman kontak memiliki formulir yang menyimpan data masukan pengguna ke `localStorage` peramban.
+- **State Management dengan Hooks**: Menggunakan hook `useState` untuk mengelola input formulir dan `useEffect` untuk memuat data dari `localStorage` saat komponen dimuat.
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Library JavaScript untuk membangun antarmuka pengguna.
+- **Tailwind CSS**: Kerangka kerja CSS berbasis utility-first untuk styling.
+- **Vite**: Alat pengembangan frontend modern untuk memulai proyek dengan cepat.
+- **LocalStorage**: API peramban untuk menyimpan data di sisi klien.
+
+
+## Preview
+
+![preview](public/gif/preview.gif)
